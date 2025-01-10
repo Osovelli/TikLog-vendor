@@ -9,12 +9,14 @@ import { AppLayout } from '@/components/AppLayout'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Settings, ChevronDown } from 'lucide-react'
+import DeliveryAPISettings from '@/components/_SettingsComponents/ApiSettings'
 
 const tabOptions = [
   { value: "card", label: "Card" },
   { value: "notification", label: "Notification" },
   { value: "security", label: "Account security" },
   { value: "help", label: "Help Center" },
+  {value: "api", label: "API"},
   { value: "terms", label: "Terms & Conditions" },
   { value: "privacy", label: "Privacy Policy" },
 ]
@@ -71,6 +73,10 @@ export const SettingsPage = () => {
 
           <TabsContent value="security">
             <SecuritySettings />
+          </TabsContent>
+
+          <TabsContent value="api">
+            <DeliveryAPISettings />
           </TabsContent>
 
           <TabsContent value="help">

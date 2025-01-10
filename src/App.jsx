@@ -16,6 +16,7 @@ import { Profile } from './pages/Profile';
 import { Notification } from './pages/Notification';
 import { SettingsPage } from './pages/SettingsPage';
 import { VehicleAndRider } from './pages/VehicleAndRider';
+import { DealsPage } from './pages/DealsPage';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
                 <Route path='/notification' element={<Notification />} />
                 <Route path='/settings' element={<SettingsPage />} />
                 <Route path='/rider' element={<VehicleAndRider />} />
+                <Route path='/deals' element={<DealsPage />} />
             </Routes>
         </BrowserRouter>
     )
